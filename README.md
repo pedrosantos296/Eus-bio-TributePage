@@ -1,6 +1,6 @@
 # ⚽ Tribute Page - Eusébio da Silva Ferreira 🐆
 
-![Eusébio](assets/eusebio-header.jpg)
+![Eusébio](assets/eusebio-hero.jpg)
 
 Uma página de tributo dedicada a **Eusébio da Silva Ferreira**, o lendário "Pantera Negra" do futebol português.    
 
@@ -23,13 +23,8 @@ Inclui:
 
 ---
 
-## 📸 Preview
-![Preview da Página](assets/preview.png)
-
----
-
 ## 🚀 Ver o Projeto Online
-👉 [**Abrir Tribute Page do Eusébio**](https://teu-pedrosantos296.github.io/Eusebio-TributePage/)  
+👉 [**Abrir Tribute Page do Eusébio**](https://pedrosantos296.github.io/Eusebio-TributePage/)  
 
 ---
 
