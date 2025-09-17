@@ -38,4 +38,4 @@ Durante a criação deste projeto, pratiquei:
 ---
 
 ## 👨‍💻 Autor
-Feito com ❤️ por [**Teu Nome**](https://github.com/pedrosantos296)  
+Feito com ❤️ por [**Pedro Santos**](https://github.com/pedrosantos296)  
