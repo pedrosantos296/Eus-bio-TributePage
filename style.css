@@ -1,0 +1,225 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+header {
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+              url("assets/eusebio-hero.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ff3d3d;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+header span {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* BIO */
+.bio {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.bio h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff3d3d;
+}
+
+.bio p {
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  font-size: 1.5rem;
+  z-index: 2;
+  color: #ff3d3d;
+}
+
+.card p {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1rem;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* GALLERY IMAGES COM HOVER INFO */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.img-hover {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* proporção 3:2 */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+}
+
+.img-hover .caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,61,61,0.8);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+    opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.img-hover:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SECTIONS DETAIL */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff3d3d;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: justify;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ff3d3d;
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
